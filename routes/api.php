@@ -23,6 +23,9 @@ Route::put('pacientes/{id}', [PacienteController::class, 'actualizar']);
 Route::post('/usuarios/login', [UsuarioController::class, 'login']);
 Route::post('pacientes/buscarPorCedula', [PacienteController::class, 'buscarPorCedula']);
 
+
+
+
 Route::get('/chequeomedico',  [ChequeoMedicoController::class, 'listar']);
 Route::get('/chequeomedico/{id}', [ChequeoMedicoController::class, 'cargarDatos']);
 
